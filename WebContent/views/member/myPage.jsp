@@ -183,11 +183,15 @@
 
             <!-- Modal body -->
             <div class="modal-body">
+            	<b>
+            		탈퇴 후 복구가 불가능합니다.<br>
+            		정말 탈퇴하시겠습니까? <br><br>
+            	</b>
                 <form action="<%= contextPath %>/deleteMember.me" method="post">
                     <!-- 현재 비밀번호 입력 -->
                     <!-- 확실하게 비밀번호의 주인을 판별할 수 있는 id도 같이 넘겨주자 -->
                     <input type="hidden" name="userId" value="<%= loginId %>">
-                            <span>비밀번호 입력 </span>
+                            <span>비밀번호를  입력해주세요. </span>
                             <input type="password" name="userPwd" required>
                     <br><br><br>
                     <div align="center">
